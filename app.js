@@ -59,6 +59,7 @@ function createElements(result) {
 function hoverEffect() {
     const cards = document.querySelectorAll('.card');
 
+    //sometimes the hovering effect is applied sometimes not
     cards.forEach((card) => {
         card.addEventListener('mouseover', function (event) {
             if (event.target.classList.contains('img-small')) {
@@ -80,12 +81,15 @@ function addCardClickListeners(result) {
         card.addEventListener('click', function (event) {
             const index = event.currentTarget.dataset.index;
 
-            if(event.target.classList.contains('img-small') ||
-               event.target.classList.contains('overlay') ||
-               event.target.classList.contains('overlay-text') ||
-               event.target.classList.contains('title')) {
-                    displayModal(result, index);
-            }
+             displayModal(result, index);
+
+            //for tapping on image or 'overlay' or 'title'. but doesn't work accurately on other screen
+            // if(event.target.classList.contains('img-small') ||
+            //    event.target.classList.contains('overlay') ||
+            //    event.target.classList.contains('overlay-text') ||
+            //    event.target.classList.contains('title')) {
+            //         displayModal(result, index);
+            // }
         });
     });
 }
