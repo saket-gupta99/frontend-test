@@ -71,7 +71,7 @@ span {
 }
 
 .details {
-    padding: 3%;
+    padding: 5%;
 }
 
 .circle {
@@ -138,7 +138,7 @@ span {
 }
 
 .card-detail {
-    padding: 3%;
+    padding: 5%;
 }
 
 .title, .card-title {
@@ -196,6 +196,6 @@ span {
 
 @media screen and (max-width: 500px) {
     .img-big {
-        height: 35vh;
+        height: 30vh;
     }
 }
