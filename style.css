@@ -17,6 +17,7 @@
 
 body {
     font-family: var(--ff-primary);
+    margin: 7rem 0;
 }
 
 span {
